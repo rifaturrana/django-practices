@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    Rana
+    {% for  student in student_info %}
+
+    <h3>Name: </h3> {{ student.name }}
+    <h3>Class: </h3> {{ student.Class }}
+    <h3>Roll: </h3> {{ student.roll }}
+    <h3>BirthDate: </h3> {{ student.birth_date }}
+
+    {% endfor %}
 </body>
 </html>
